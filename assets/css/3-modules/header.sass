@@ -4,11 +4,10 @@
 .ui.secondary.pointing.menu.fixed
 	padding: 0 40px
 	border-bottom: 0px
-.ui.equal.width.center.aligned.padded.grid
-	padding-top: 60px
+.ui.stackable.grid.section-one
 	padding-left: 50px
 	padding-right: 50px
-	min-height: 1600px
+	min-height: 1000px
 
 .item.header
 	padding-bottom: 0px !important
@@ -42,30 +41,6 @@
 	.ui.text.container
 		max-width: 715px !important
 
-
-.secondary.pointing.menu .toc.item
-	display: none
-
-@media only screen and (max-width: 700px)
-	.item.header
-		padding-bottom: 14px !important
-	.ui.fixed.menu
-		display: none !important
-	.secondary.pointing.menu
-		.item, .menu
-			display: none
-		.toc.item
-			display: block
-	.masthead
-		&.segment
-			min-height: 350px
-		h1.ui.header
-			font-size: 2em
-			margin-top: 1.5em
-		h2
-			margin-top: 0.5em
-			font-size: 1.5em
-
 //Fullscreen Bg
 
 .fullscreen-bg
@@ -79,5 +54,27 @@
 
 .fullscreen-bg__video
   top: 0
-  left: 0
-  width: 100%
+
+@media(min-width: 1024px)
+  .fullscreen-bg__video
+  	width: 100%
+
+@media(min-width: 769px)
+	.right.menu
+        .item.hamburger
+          	display: none !important
+
+@media(max-width: 768px)
+	.right.menu
+        .item.call-us
+        	display: none !important
+        .item.brochure
+        	display: none !important
+        .item.customer
+        	display: none !important
+
+@media(max-width: 400px)
+	.item.products
+		display: none !important
+	.item.about
+		display: none !important

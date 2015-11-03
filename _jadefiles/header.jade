@@ -1,32 +1,28 @@
 //Main navigation
 .pusher
+nav
+  .ui.secondary.pointing.menu.fixed.inverted
+    a.item.header
+      img.logo(src='assets/img/logo_white.png')
+    a.item.active.products
+      | Products
+    a.item.about
+      | About Us
+    .right.menu
+      a.item.call-us
+        i.phone.icon
+        |     +1-(650)-681-9261
+      a.item.brochure
+        i.file.pdf.outline.icon
+        |     Brochure
+      a.item.customer
+        i.user.icon
+        |     Customer Area
+      a.item.hamburger
+        i.sidebar.icon
+        |     Menu
   .ui.vertical.masthead.center.aligned.segment
-    nav
-      .ui.secondary.pointing.menu.fixed.inverted
-        a.item.header
-          img.logo(src='assets/img/logo_white.png')
-        a.item.active
-          | Products
-        a.item
-          | About Us
-        .right.menu
-          a.item
-            i.phone.icon
-            |     +1-(650)-681-9261
-          a.item
-            i.file.pdf.outline.icon
-            |     Brochure
-          a.item
-            i.user.icon
-            |     Customer Area
-
-      
     .ui.text.container
-      .fullscreen-bg
-        video.fullscreen-bg__video(loop='', muted='', autoplay='', poster='assets/img/header.jpg')
-          source(src='video/big_buck_bunny.webm', type='video/webm')
-          source(src='assets/img/about.mp4', type='video/mp4')
-          source(src='video/big_buck_bunny.ogv', type='video/ogg')
       h1.ui.header.inverted
         | Intangible asset valuation
       h2.inverted We make use of data with simple tools.
@@ -35,23 +31,13 @@
         | Get Started 
         i.right.arrow.icon
 
+    .fullscreen-bg
+      video.fullscreen-bg__video(loop='', muted='', autoplay='', poster='assets/img/header.jpg')
+        source(src='video/big_buck_bunny.webm', type='video/webm')
+        source(src='assets/img/about.mp4', type='video/mp4')
+        source(src='video/big_buck_bunny.ogv', type='video/ogg')
 
-// Content 
-.ui.equal.width.center.aligned.padded.grid
-  .row
-    .olive.column
-      | Olive
-    .black.column
-      | Black
-  .row(style='background-color: #869D05;color: #FFFFFF;')
-    .column Custom Row
-  .row
-    .black.column
-      | Black
-    .olive.column
-      | Olive
-
-// Hidden menu
+// Hidden top bar
 .ui.top.demo.sidebar.ui.segment
   .ui.center.aligned.page.grid
     .one.column.row

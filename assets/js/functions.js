@@ -4,8 +4,9 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 
-	$('a.item.header').click(function(){
+	$('.ui.huge.primary.button').click(function(){
 		$('.ui.sidebar.ui.segment').sidebar('toggle');		
-	})
+	});
+
 });
 
