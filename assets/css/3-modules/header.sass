@@ -1,0 +1,83 @@
+.home-wrap
+	max-width: 100%
+
+.ui.secondary.pointing.menu.fixed
+	padding: 0 40px
+	border-bottom: 0px
+.ui.equal.width.center.aligned.padded.grid
+	padding-top: 60px
+	padding-left: 50px
+	padding-right: 50px
+	min-height: 1600px
+
+.item.header
+	padding-bottom: 0px !important
+	border-bottom: 0px !important
+	img
+		width: 110px !important
+
+.item.header.active
+	padding-bottom: 0px !important
+	border-bottom: 0px !important
+	img
+		width: 110px !important
+
+.masthead
+	&.segment
+		min-height: 700px
+		padding: 1em 0em
+	.logo.item img
+		margin-right: 1em
+	.ui.menu .ui.button
+		margin-left: 0.5em
+	h1.ui.header
+		margin-top: 3em
+		margin-bottom: 0em
+		font-size: 4em
+		font-weight: normal
+	h2
+		font-size: 1.7em
+		font-weight: normal
+		color: white
+	.ui.text.container
+		max-width: 715px !important
+
+
+.secondary.pointing.menu .toc.item
+	display: none
+
+@media only screen and (max-width: 700px)
+	.item.header
+		padding-bottom: 14px !important
+	.ui.fixed.menu
+		display: none !important
+	.secondary.pointing.menu
+		.item, .menu
+			display: none
+		.toc.item
+			display: block
+	.masthead
+		&.segment
+			min-height: 350px
+		h1.ui.header
+			font-size: 2em
+			margin-top: 1.5em
+		h2
+			margin-top: 0.5em
+			font-size: 1.5em
+
+//Fullscreen Bg
+
+.fullscreen-bg
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  overflow: hidden
+  z-index: -100
+
+.fullscreen-bg__video
+  top: 0
+  left: 0
+  width: 100%
